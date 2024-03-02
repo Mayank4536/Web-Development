@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS cariable</title>
+    <style>
+        :root{
+            --color: rgb(232, 153, 49);
+            --seccolor: rgb(47, 219, 245);
+            --defpad:23px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.nav{
+    background-color:var(--color);
+}
+
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    padding: var(--defpad);
+    border: 2px solid black;
+
+}
+ul li:first-child{
+    --color:red;
+    background-color: var(--color);
+}
+.container{
+    background-color:  var(--seccolor);
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vero, delectus veniam voluptates voluptatibus iure dolorem ea impedit repudiandae eveniet expedita consequatur. Ducimus nihil officia natus illo quae rerum molestiae architecto exercitationem! Officia excepturi dolor architecto tempora illum itaque soluta eum corrupti! Corrupti in itaque inventore quas! Dolorem, enim a?
+    </div>
+    
+</body>
+</html>
